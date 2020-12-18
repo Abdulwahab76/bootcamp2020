@@ -33,4 +33,4 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ fragile-river.surge.sh --token "1cf0c8bd1a44397bc59e7e741ae1eb7a"
+        run: surge ./ fragile-river.surge.sh --token ${{secrets.SURGE_TOKEN}}
